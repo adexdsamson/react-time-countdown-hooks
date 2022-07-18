@@ -1,5 +1,5 @@
 {
-  "name": "react-time-countdown-hooks",
+  "name": "@adexdsamson/react-time-countdown-hooks",
   "version": "1.0.0",
   "description": "Simple yet powerful time countdown hooks for React.",
   "main": "dist/cjs/index.js",
@@ -40,5 +40,8 @@
   "types": "dist/index.d.ts",
   "dependencies": {
     "tslib": "^2.4.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/adexdsamson"
   }
 }
