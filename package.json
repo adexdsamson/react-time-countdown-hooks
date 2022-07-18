@@ -1,11 +1,12 @@
 {
   "name": "@adexdsamson/react-time-countdown-hooks",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Simple yet powerful time countdown hooks for React.",
   "main": "dist/cjs/index.js",
   "scripts": {
     "rollup": "rollup -c"
   },
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adexdsamson/react-time-countdown-hooks.git"
@@ -28,18 +29,20 @@
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.3",
     "@types/react": "^18.0.15",
-    "react": "^18.2.0",
     "rollup": "^2.77.0",
     "rollup-plugin-dts": "^4.2.2",
-    "typescript": "^4.7.4"
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.7.4",
+    "tslib": "^2.4.0"
   },
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
   "types": "dist/index.d.ts",
-  "dependencies": {
-    "tslib": "^2.4.0"
+  "peerDependencies": {
+    "react": "^18.2.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/adexdsamson"
