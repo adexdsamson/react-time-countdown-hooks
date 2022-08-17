@@ -54,8 +54,8 @@ const useTimer = (props: TimerProps) => {
     };
   });
 
-  const Timer = () => {
-    const Typography = "p";
+  const Timer = ({ as }: { as: 'h1' | "h2" | 'h3' | "h4" | "h5" | "h6" | "p" } ) => {
+    const Typography =  as ? as : "p";
     return (
       <div>
         {minutes === 0 && seconds === 0 ? null : (
